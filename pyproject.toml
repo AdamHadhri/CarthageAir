@@ -1,0 +1,30 @@
+[project]
+name = "carthageair"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AdamHadhri", email = "adamhadhri11@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.5.2",
+    "langchain-chroma>=1.2.0",
+    "langchain-groq>=1.2.1",
+    "langchain-huggingface>=1.3.0",
+    "langchain-text-splitters>=1.2.0",
+    "langgraph>=1.2.24",
+    "onnxruntime>=1.32.0",
+    "pymupdf4llm>=2.1",
+    "python-dotenv>=1.2.4",
+    "rapidocr>=3.10.0",
+    "sentence-transformers>=6.3.0",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+carthageair = "carthageair:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
